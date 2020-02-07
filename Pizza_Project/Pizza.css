@@ -1,0 +1,80 @@
+body {
+    background-color: red;
+}
+
+h1 {
+    font-family: 'Coming Soon', Arial;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    }
+
+h3 {
+    font-family: 'Rock Salt';
+    color: whitesmoke;
+}
+
+div {
+    color: white;
+    font-family: cursive
+
+}
+
+#menuBG {
+    width: 500px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 100px 0px 0px 0px;
+    float: right;
+    font-size: 1em;
+    text-shadow: 2px 0 0 gray, -2px 0 0 gray, 0 2px 0 gray, 0 -2px 0 gray, 1px 1px gray, -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right
+   }
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+	}   
+
+#showText {
+    width: 200px;
+    height:190px;
+    margin: 50px auto ;
+    float:left;
+}
+
+#cart {
+    top:0;
+    margin: 0px auto;
+    width:400px;
+    height: 300px;
+}
+
+#btnOrder {
+    margin: 0px 0px 0px 200px;
+    width:100px;
+    height:40px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href=>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+   
+        
+        <script >
+            $(document).ready(function() {
+                $("html").append (
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='one'>Paragraph 1</p>\
+                                <p id='two'>Paragraph 2</p>\
+                                <p id='three'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+            $("#two").css({"color":"red"});
+            $("#three").click(function() {
+                $('h1').hide();
+                });
+            });
+        </script>
+            
+
+   
+</html>

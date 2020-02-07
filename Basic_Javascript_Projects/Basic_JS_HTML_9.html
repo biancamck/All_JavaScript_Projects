@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Techno slideshow</title>
+        <link rel="stylesheet" type="text/css" href="CSS/css_for_js_9.css">
+    </head>
+
+    <body>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click Here</button>
+        <p id="timer"></p>
+
+        <h3>Take a look at our previous events:</h3>
+
+        <!--slideshow container-->
+        <div class="slideshow-container">
+        <!--images and text-->    
+            <div class="myslides fade">
+                <div class="numbertext">1 / 5</div>
+                <img class="picsize" src="CSS/images/mr_romo.jpg" alt="mr romo" style="width:50%">
+                <div class="text">Mr. Romo layin it down at Da Hui, sunday nights.</div>
+            </div>
+
+            <div class="myslides fade">
+                <div class="numbertext">2 / 5</div>
+                <img class="picsize" src="CSS/images/tt_gabe_panda.jpg" alt="gabe_panda" style="width:50%">
+                <div class="text">Our last Taco Tuesday with Dellous and Panda <br>@ Railhouse Lounge!</div>
+            </div>
+
+            <div class="myslides fade">
+                <div class="numbertext">3 / 5</div>
+                <img  class="picsize" src="CSS/images/zach_tryst.jpg" alt="zach" style="width:50%">
+                <div class="text">Classing up Tryst! Zachariah on decks.</div>
+            </div>
+
+            <div class="myslides fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="picsize" src="CSS/images/lance.jpg" alt="lance" style="width:50%">
+                <div class="text">Getting serious w/Lance @ Startday's New Years Daytrip!</div>
+            </div>
+
+            <div class="myslides fade">
+                <div class="numbertext">5 / 5</div>
+                <img  class="picsize" src="CSS/images/ceez_romo.jpg" alt="ceez_romo" style="width:50%">
+                <div class="text">Having fun with Ceez and <br>Romo on Sundays at Da Hui!</div>
+            </div>
+
+ <!--------next and previous buttons-------->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+
+        <!--The dots and circles-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        
+        </div>
+
+
+
+    </div>
+
+        
+
+
+
+        <script src="JS/Basic_js_9.js"></script>
+
+
+        
+    </body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maurizio!</title>
+		<link rel="stylesheet" href=>
+    </head>
+    <body>
+        
+		    <h2>Wanna see a Kitty?</h2>
+			<p>Click the button below to view full screen</p>	
+            <button onclick="openFullscreen();">Make it bigger!</button>
+            <br>
+            <img src="maurizio1.jpg" controls id="maurizio" alt="maurizio1" width="100px" height="75px">
+        	
+        
+            <script type="text/javascript">
+            //gets element i want in fullscreen
+                var elem = document.getElementById("maurizio");
+            //funtion to open fullscreen
+                function openFullscreen() {
+            //if fullscreen is available:
+            if (
+                document.fullscreenEnabled || /* Standard syntax */
+                document.webkitFullscreenEnabled || /* Chrome, Safari & Opera */
+                document.mozFullScreenEnabled || /* Firefox */
+                document.msFullscreenEnabled /* IE/Edge */
+                ) {
+            //show element in fullscreen   
+                    elem.webkitRequestFullscreen();
+                    if (elem.requestFullscreen) {
+                    elem.requestFullscreen(); /* Standard syntax */
+                    } else if (elem.mozRequestFullScreen) { /* Firefox */
+                    elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                    elem.webkitRequestFullscreen();
+                    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                    elem.msRequestFullscreen();
+                    }
+                    }
+                }
+                </script>
+            
+
+    </body>
+</html>

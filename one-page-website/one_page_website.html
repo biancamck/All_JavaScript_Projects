@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>Fiore Photography PDX</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="one_page_website.css">
+	</head>
+	<body> 
+	<header>
+		<div>
+			<nav>
+			<ul>
+				<a href="#home" id="link"><li>Home</li></a>
+				<a href="#images" id="link"><li>Image Gallery</li></a>
+				<a href="#videos" id="link"><li>Video Gallery</li></a>
+				<a href="#inquiry" id="link"><li>Art Request</li></a>
+				<a href="#about"><li>About Fiore</li></a>
+				</ul>
+			</nav>
+		</div>
+			
+		<!--welcome-->
+			
+			<div id="home">
+			<h1><font color="red">Fiore Photography PDX </font></h1>
+			<p>Hey, I'm Bianca McKenzie, a native Portlander and a freelance photographer specializing in Travel, Urban and Landscape photography. I like to keep things interesting, using different perspectives and viewpoints, combining traditional darkroom techniques with new digital technology.</p>
+			<p>I'm happy to share with you my new site where you can view my latest art images and video as well as contact information for those looking to purchase prints.</p>
+			</div>
+		</header>
+
+<!--photo gallery-->
+
+	<div id="images">
+
+			<div >
+				<h2>Image Gallery</h2>
+				<p>For inquiries and purchase requests, please use the <a href="#inquiry" id="link">Art Inquiry Request form </a></p>
+			</div>
+
+	<!--Lightbox Image gallery-->			
+		<div class="galleryContaier">	
+			
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="calle">
+				</div>
+			</div>
+		
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="caborojo">
+				</div>
+			</div>
+		
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="la playa">
+				</div>
+			</div>
+			
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="lolo pass">
+				</div>
+			</div>
+		
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="castillo">
+				</div>
+			</div>
+		
+			<div class="photo-container">
+				<div class="photo">
+				<img src="./images/thumbs/thumb6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="jamones">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+		<!--end gallery images-->	
+
+		<!--the modal lightbox-->
+	<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+
+
+		<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					 <img src="./images/thumbs/thumb1.jpg">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					 <img src="./images/thumbs/thumb2.jpg">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					 <img src="./images/thumbs/thumb3.jpg">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					 <img src="./images/thumbs/thumb4.jpg">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					 <img src="./images/thumbs/thumb5.jpg">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					 <img src="./images/thumbs/thumb6.jpg">
+				</div>
+
+			
+
+			
+
+				<!--next/prev controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+
+				<!--thumbnail image controls-->
+				<div class="filmstrip">
+
+					<img class="demo" src="./images/thumbs/thumb1.jpg" onclick="currentSlide(1)" alt="calle">
+				
+					<img class="demo" src="./images/thumbs/thumb2.jpg" onclick="currentSlide(2)" alt="caborojo">
+				
+					<img class="demo" src="./images/thumbs/thumb3.jpg" onclick="currentSlide(3)" alt="la playa">
+			
+					<img class="demo" src="./images/thumbs/thumb4.jpg" onclick="currentSlide(4)" alt="lolo pass">
+			
+					<img class="demo" src="./images/thumbs/thumb5.jpg" onclick="currentSlide(5)" alt="castillo">
+			
+					<img class="demo" src="./images/thumbs/thumb6.jpg" onclick="currentSlide(6)" alt="jamones">
+				
+				</div>
+
+				<script src="one_page_website.js"></script>
+			
+		</div>
+	</div>
+			
+
+		
+
+		
+
+
+		
+
+
+<!-- video div-->
+<br><br><br><br>
+		<div>
+			<div id="videos">
+				<h1>Video Gallery</h2>
+				<p>Here's some exciting events I had the pleasure to capture!</p>
+				<div>
+					<h3> Headless Horseman @ Liquor Store 11/30/19</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/AhirP16hNOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>	
+				<div>
+					<h3> Carlos B @ Liquor Store 12/6/19</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/YNzcYn31NfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<!--art request form-->
+		<div> 
+			<div id="inquiry"> 
+			<h3>Art Inquiry Request</h3>
+			<p>For inquiries about art, sizing, framing and pricing, please fill out the form below.</p>
+			<form action="" method="get">
+				Photograph name: <input type="text" name=Photo_Name><br>
+				Size/Medium/Frame request: <input type="text" name=Request><br>
+				Name: <input type="text" name=Cust_Name><br>
+				Email: <input type="text" name=Cust_email><br>
+				Phone: <input type="text" name=Cust_phone><br>
+				<input type="submit" value="Submit">
+			</form>
+			</div>
+		</div>
+			
+				
+	<!--about-->
+		<div>
+			<div id="about"><span style=color:gray>
+				<h3>About Fiore Photography PDX</h3>
+				<h5>Photographer: Bianca McKenzie</h5>
+				<p> Bianca is a native Portlander and a freelance photographer specializing in Travel, Urban and Landscape photography. I like to keep things interesting.
+				<br>I've done photography recreationally for about 15 years, starting first on 35mm film in my high school photography class. Now I’ve moved on from film into the digital world but I still enjoy incorporating the old school photo techniques in the new digital environment. 
+				<br>This is the first time I've had the opportunity to share and publish any of my work for ya'll to enjoy. The images in my collections have been taken primarily during my 2009 study abroad trip in Spain, as well as my European adventures between 2011 and 2014. I’ve also included some more recent travel images from 2016 to 2019!
+				<br>For the last couple months I've been working hard to get these images ready to share with the world! I currently have 3 images hanging up at Railhouse Lounge, for display and purchase!
+				<br>All images in my gallery are available for purchase, which you can inquire further by submiting an Art Inquiry Request!
+				<br>Thanks, <br>-Fiore (aka Bianca McKenzie)</p>
+		</div>
+
+		
+	</body>
+	
+	<footer>
+	<p>Posted by: Bianca Fiore<br>&copy;FiorePhotographyPDX</p>
+	<p>Contact information: <a href="mailto:fiorephotographyPDX@yahoo.com">fiorephotographyPDX@yahoo.com</a>.<br>503.858.7332</p>
+	</footer>
+	
+
+</html>
